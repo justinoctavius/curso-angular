@@ -1,0 +1,27 @@
+<div class="container">
+  <div class="header">
+    <div class="img"><img [src]="imgUrl" [alt]="name" /></div>
+    <h3 class="title">Tarjeta de presentación</h3>
+  </div>
+  <div class="body">
+    <ul>
+      <li class="item">
+        <strong>Nombre: </strong>
+        <p>{{ name }}</p>
+      </li>
+      <li class="item">
+        <strong>Ocupacion: </strong>
+        <p>{{ occupation }} {{ getOccupationIcon() }}</p>
+      </li>
+      <li class="item">
+        <strong>Bio</strong>
+        <p>{{ bio }}</p>
+      </li>
+    </ul>
+  </div>
+  <div class="footer">
+    <button class="btn" *ngIf="onDeleteClick" (click)="handleOnDeleteClick()">
+      Eliminar
+    </button>
+  </div>
+</div>

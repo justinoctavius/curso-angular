@@ -1,0 +1,17 @@
+<div class="container">
+  <app-persons-deleted-nav
+    *ngIf="shouldShowPersonsDeletedNav()"
+    [persons]="personsDeleted"
+  ></app-persons-deleted-nav>
+  <div class="listado">
+    <app-person
+      *ngFor="let person of persons"
+      [bio]="person.bio"
+      [imgUrl]="person.imgUrl"
+      [name]="person.name"
+      [occupation]="person.occupation"
+      (onDeleteClick)="onDeleteClick($event)"
+      [id]="person.id"
+    ></app-person>
+  </div>
+</div>

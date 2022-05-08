@@ -1,0 +1,27 @@
+.persons-deleted-nav {
+  background-color: #333;
+  color: white;
+  position: sticky;
+  top: 0;
+  padding: 1rem;
+}
+
+.persons-deleted-nav .title {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.persons-deleted {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding-left: 2rem;
+}
+
+.person-deleted-info h2 {
+  font-size: 1.25rem;
+}
+
+.person-deleted-info p {
+  color: #ccc;
+}

@@ -1,0 +1,11 @@
+<div class="persons-deleted-nav">
+  <h1 class="title">Eliminados recientemente</h1>
+  <div class="persons-deleted">
+    <div class="person-deleted-info" *ngFor="let person of persons">
+      <h2>
+        {{ person.name }}
+      </h2>
+      <p>{{ person.occupation }}</p>
+    </div>
+  </div>
+</div>
